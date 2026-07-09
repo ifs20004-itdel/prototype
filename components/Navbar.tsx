@@ -1,40 +1,105 @@
 "use client";
 
 import Link from "next/link";
-import { siteConfig, navLinks } from "@/libs/data";
+import { useState } from "react";
+import { siteConfig, navLinks } from "@/libs/data_v2";
 
 export default function Navbar() {
-  return (
-    <nav
-      style={{ borderBottom: "1px solid var(--line)" }}
-      className="flex justify-between items-center px-12 py-6 max-w-content mx-auto"
-    >
-      <div className="flex items-center gap-2.5 font-display text-[19px] font-semibold tracking-[0.01em]">
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-          <circle cx="11" cy="11" r="9" stroke="#C9A876" strokeWidth="1.4" />
-          <circle cx="11" cy="11" r="3" fill="#C9A876" />
-        </svg>
-        {siteConfig.name}
-      </div>
-      <div className="hidden md:flex gap-11">
-        {navLinks.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className="text-[13px] font-medium tracking-[0.01em] text-[var(--text-mute)] hover:text-[var(--text)] transition-colors duration-200"
-          >
-            {link.label}
-          </Link>
-        ))}
-      </div>
+  const [open, setOpen] = useState(false);
 
-      <Link
-        href="#products"
-        style={{ border: "1px solid var(--line-strong)" }}
-        className="hidden md:inline-block px-[22px] py-2.5 rounded-[1px] text-[12.5px] font-medium tracking-[0.03em] hover:border-[var(--brass)] hover:text-[var(--brass)] transition-all duration-200"
-      >
-        Hubungi Kami
-      </Link>
-    </nav>
+  return (
+    <header style={{ background: "var(--navy)" }} className="sticky top-0 z-50 shadow-md">
+      <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-3">
+          {/* Logo mark — TKS initials in gold circle */}
+          <div
+            className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0"
+            style={{ background: "var(--gold)", color: "var(--navy-dark)" }}
+          >
+            TKS
+          </div>
+          <div>
+            <div
+              className="font-display text-[15px] font-700 leading-tight tracking-wide"
+              style={{ color: "white", fontFamily: "var(--font-plus-jakarta)" }}
+            >
+              {siteConfig.shortName}
+            </div>
+            <div className="text-[11px] font-medium tracking-wide" style={{ color: "rgba(255,255,255,0.55)" }}>
+              Karya Sampoerna
+            </div>
+          </div>
+        </Link>
+
+        {/* Desktop nav */}
+        <div className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-[13.5px] font-medium transition-colors duration-200"
+              style={{ color: "rgba(255,255,255,0.75)" }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "var(--gold)")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.75)")}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href="#contact"
+            className="px-5 py-2.5 rounded-sm text-[13px] font-semibold transition-colors duration-200"
+            style={{ background: "var(--gold)", color: "var(--navy-dark)" }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = "var(--gold-light)")}
+            onMouseLeave={(e) => (e.currentTarget.style.background = "var(--gold)")}
+          >
+            Hubungi Kami
+          </Link>
+        </div>
+
+        {/* Mobile hamburger */}
+        <button
+          className="md:hidden flex flex-col gap-1.5 p-2"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
+        >
+          {[0, 1, 2].map((i) => (
+            <span
+              key={i}
+              className="block w-6 h-0.5 transition-all duration-200"
+              style={{ background: "white" }}
+            />
+          ))}
+        </button>
+      </nav>
+
+      {/* Mobile menu */}
+      {open && (
+        <div
+          className="md:hidden px-6 pb-5 flex flex-col gap-4"
+          style={{ background: "var(--navy-dark)", borderTop: "1px solid rgba(255,255,255,0.1)" }}
+        >
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-[14px] font-medium py-1"
+              style={{ color: "rgba(255,255,255,0.8)" }}
+              onClick={() => setOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href="#contact"
+            className="inline-block text-center px-5 py-2.5 rounded-sm text-[13px] font-semibold mt-1"
+            style={{ background: "var(--gold)", color: "var(--navy-dark)" }}
+            onClick={() => setOpen(false)}
+          >
+            Hubungi Kami
+          </Link>
+        </div>
+      )}
+    </header>
   );
 }
