@@ -1,3 +1,4 @@
+@import "tailwindcss";
 
 :root {
   --navy: #1B2D5B;
@@ -18,17 +19,7 @@
   --white: #FFFFFF;
 }
 
-@import "tailwindcss";
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
@@ -53,4 +44,4 @@ a {
 img {
   max-width: 100%;
   display: block;
-}
+} */ 
