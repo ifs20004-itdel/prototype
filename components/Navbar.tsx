@@ -10,9 +10,7 @@ export default function Navbar() {
   return (
     <header style={{ background: "var(--navy)" }} className="sticky top-0 z-50 shadow-md">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          {/* Logo mark — TKS initials in gold circle */}
           <div
             className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0"
             style={{ background: "var(--gold)", color: "var(--navy-dark)" }}
@@ -32,7 +30,6 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link
@@ -56,8 +53,6 @@ export default function Navbar() {
             Hubungi Kami
           </Link>
         </div>
-
-        {/* Mobile hamburger */}
         <button
           className="md:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setOpen(!open)}
@@ -72,8 +67,6 @@ export default function Navbar() {
           ))}
         </button>
       </nav>
-
-      {/* Mobile menu */}
       {open && (
         <div
           className="md:hidden px-6 pb-5 flex flex-col gap-4"

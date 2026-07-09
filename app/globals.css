@@ -1,17 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0B0B0D;
-  --surface: #18181B;
-  --surface-2: #1F1F23;
-  --line: rgba(232, 230, 225, 0.1);
-  --line-strong: rgba(232, 230, 225, 0.18);
-  --text: #E8E6E1;
-  --text-mute: #87847C;
-  --text-dim: #57544D;
-  --brass: #C9A876;
-  --brass-dim: #8A7654;
-  --brass-light: #DBB988;
+  --navy: #1B2D5B;
+  --navy-dark: #111E3D;
+  --navy-light: #2A4080;
+  --gold: #D4A017;
+  --gold-light: #E8B830;
+  --gold-pale: #FBF3DC;
+  --gray: #6B7280;
+  --gray-light: #F3F4F6;
+  --gray-mid: #E5E7EB;
+  --line: rgba(27, 45, 91, 0.12);
+  --line-strong: rgba(27, 45, 91, 0.22);
+  --text: #1A1A2E;
+  --text-mute: #6B7280;
+  --text-dim: #9CA3AF;
+  --bg: #F8F9FA;
+  --white: #FFFFFF;
 }
 
 *,
@@ -35,11 +40,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-space-grotesk), sans-serif;
+h1, h2, h3, h4 {
+  font-family: var(--font-plus-jakarta), sans-serif;
 }
 
 a {
