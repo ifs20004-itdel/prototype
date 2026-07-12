@@ -23,7 +23,7 @@ export const heroContent = {
   headline: "Suplai mesin industri & fabrikasi",
   subheadline: "untuk bisnis yang tidak boleh berhenti.",
   description:
-    "PT. Tectona Karya Sampoerna adalah mitra perdagangan besar mesin kantor dan industri pengolahan, suku cadang, perlengkapan, serta layanan fabrikasi — melayani kebutuhan industri di Riau dan sekitarnya dengan standar kualitas dan ketepatan waktu.",
+    "PT Tectona Karya Sampoerna adalah perusahaan yang bergerak dalam bidang perdagangan besar, ekspor, dan impor, dengan fokus utama pada penyediaan mesin kantor, mesin industri pengolahan, suku cadang, hingga layanan reparasi untuk produk logam fabrikasi. Kami berkomitmen menghadirkan layanan berkualitas yang dapat mendukung kelancaran operasional para mitra di berbagai sektor industri.",
   ctaPrimary: { label: "Lihat Layanan Kami", href: "/services" },
   ctaSecondary: { label: "Hubungi Kami", href: "#contact" },
 };

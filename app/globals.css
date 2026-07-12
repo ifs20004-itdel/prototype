@@ -19,7 +19,7 @@
   --white: #FFFFFF;
 }
 
-/* html {
+html {
   scroll-behavior: smooth;
 }
 
@@ -44,4 +44,4 @@ a {
 img {
   max-width: 100%;
   display: block;
-} */ 
+}
