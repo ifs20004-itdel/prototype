@@ -84,12 +84,6 @@ export const products = [
   },
 ];
 
-export const ctaContent = {
-  eyebrow: "Mitra Bisnis",
-  headline: "Want to develop your own web app?",
-  cta: { label: "Contact Us", href: "#" },
-};
-
 export const navLinks = [
   { label: "Beranda", href: "#" },
   { label: "Tentang Kami", href: "#about" },

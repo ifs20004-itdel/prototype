@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -28,14 +26,6 @@ export default function Navbar() {
             />
           </div> */}
 
-          {/* <Image
-            src="/logo.png"
-            alt="Logo"
-            width={75}
-            height={75}
-            className="object-contain rounded-full"
-            style={{ background: "white", padding: "4px" }}
-          /> */}
           <div>
             <div
               className="font-display text-[15px] font-700 leading-tight tracking-wide"
