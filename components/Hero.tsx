@@ -30,6 +30,7 @@ export default function Hero() {
 
       <div className="relative max-w-6xl mx-auto px-6 py-24 w-full">
         <div className="max-w-3xl">
+          {/* Eyebrow */}
           <div
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[12px] font-semibold uppercase tracking-widest mb-8"
             style={{

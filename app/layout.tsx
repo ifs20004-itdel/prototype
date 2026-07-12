@@ -24,21 +24,19 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Website Prototype — Version 1.0",
+  title: "PT. Tectona Karya Sampoerna — Mitra Bisnis Terpercaya di Riau",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum ipsum felis, at blandit nunc finibus eget.",
+    "PT. Tectona Karya Sampoerna adalah perusahaan jasa dan trading yang berkomitmen memberikan solusi profesional dan berintegritas untuk industri di Pelalawan, Riau.",
   keywords: [
-    "earphone",
-    "speaker portabel",
-    "DAC",
-    "audio interface",
-    "perangkat audio",
-    "Jakarta",
+    "Tectona Karya Sampoerna",
+    "perusahaan Pelalawan",
+    "kontraktor Riau",
+    "trading Riau",
+    "jasa bisnis Pelalawan",
   ],
   openGraph: {
-    title: "Website Prototype — Version 1.0",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum ipsum felis, at blandit nunc finibus eget.",
+    title: "PT. Tectona Karya Sampoerna",
+    description: "Mitra bisnis terpercaya untuk industri di Riau.",
     type: "website",
     locale: "id_ID",
   },
