@@ -1,4 +1,4 @@
-import { testimonials } from "@/libs/data_v2";
+import { testimonials } from "@/libs/data";
 
 export default function Partner() {
   return (

@@ -1,4 +1,4 @@
-import { siteConfig } from "@/libs/data_v2";
+import { siteConfig } from "@/libs/data";
 
 export default function Contact() {
   return (

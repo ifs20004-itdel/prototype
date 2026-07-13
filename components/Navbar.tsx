@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import { siteConfig, navLinks } from "@/libs/data_v2";
+import { siteConfig, navLinks } from "@/libs/data";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

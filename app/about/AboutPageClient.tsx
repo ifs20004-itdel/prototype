@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsappButton";
-import { aboutPage, aboutSummary, stats } from "@/libs/data_v2";
+import { aboutPage, aboutSummary, stats } from "@/libs/data";
 
 export default function AboutPage() {
   return (

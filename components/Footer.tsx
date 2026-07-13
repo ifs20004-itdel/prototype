@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { siteConfig, navLinks } from "@/libs/data_v2";
+import { siteConfig, navLinks } from "@/libs/data";
 
 export default function Footer() {
   const year = new Date().getFullYear();

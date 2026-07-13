@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { heroContent, stats } from "@/libs/data_v2";
+import { heroContent, stats } from "@/libs/data";
 
 export default function Hero() {
   return (

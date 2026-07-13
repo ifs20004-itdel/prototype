@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsappButton";
-import { services, siteConfig } from "@/libs/data_v2";
+import { services, siteConfig } from "@/libs/data";
 import Link from "next/link";
 
 export default function ServicesPage() {

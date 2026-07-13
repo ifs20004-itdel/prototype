@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { aboutSummary } from "@/libs/data_v2";
+import { aboutSummary } from "@/libs/data";
 
 export default function AboutSection() {
   return (
