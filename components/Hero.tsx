@@ -28,7 +28,7 @@ export default function Hero() {
         style={{ background: "var(--gold)" }}
       />
 
-      <div className="relative max-w-6xl mx-auto px-6 py-24 w-full">
+      <div className="relative max-w-[1400px] mx-auto px-6 py-24 w-full">
         <div className="max-w-3xl">
           <div
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[12px] font-semibold uppercase tracking-widest mb-8"
@@ -83,7 +83,7 @@ export default function Hero() {
             </Link>
             <Link
               href={heroContent.ctaSecondary.href}
-              className="inline-block px-7 py-3.5 rounded-sm text-[14.5px] font-semibold transition-all duration-200"
+              className="inline-block px-7 py-3.5 rounded-sm text-[14.5px] font-semibold leading-relaxed transition-all duration-200"
               style={{
                 background: "transparent",
                 color: "white",
@@ -93,41 +93,40 @@ export default function Hero() {
               {heroContent.ctaSecondary.label}
             </Link>
           </div>
-
-          <div className="mt-14">
-            <div
-              className="text-[12px] font-semibold uppercase tracking-widest mb-5"
-              style={{ color: "rgba(255,255,255,0.7)" }}
-            >
-              Mengapa memilih kami
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-              {strengths.map((s, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center text-center gap-3 px-3 py-5 rounded-sm"
-                  style={{
-                    background: "rgba(255,255,255,0.06)",
-                    border: "1px solid rgba(255,255,255,0.1)",
-                  }}
-                >
-                  <div className="relative w-14 h-14 flex-shrink-0">
-                    <Image
-                      src={s.icon}
-                      alt={s.title}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <div
-                    className="text-[12px] font-semibold leading-relaxed w-full"
-                    style={{ color: "white" }}
-                  >
-                    {s.title}
-                  </div>
+        </div>
+        <div className="mt-14">
+          <div
+            className="text-[12px] font-semibold uppercase tracking-widest mb-5"
+            style={{ color: "rgba(255,255,255,0.7)" }}
+          >
+            Mengapa memilih kami
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
+            {strengths.map((s, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center text-center gap-3 px-3 py-5 rounded-sm"
+                style={{
+                  background: "rgba(255,255,255,0.06)",
+                  border: "1px solid rgba(255,255,255,0.1)",
+                }}
+              >
+                <div className="relative w-14 h-14 flex-shrink-0">
+                  <Image
+                    src={s.icon}
+                    alt={s.title}
+                    fill
+                    className="object-contain"
+                  />
                 </div>
-              ))}
-            </div>
+                <div
+                  className="text-[12px] font-semibold leading-relaxed w-full"
+                  style={{ color: "white" }}
+                >
+                  {s.title}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
