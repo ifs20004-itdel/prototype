@@ -4,14 +4,7 @@ export default function Partner() {
   return (
     <section className="py-24" style={{ background: "var(--white)" }}>
       <div className="max-w-6xl mx-auto px-6">
-        {/* Header */}
         <div className="text-center mb-14">
-          <div
-            className="inline-block text-[12px] font-bold uppercase tracking-widest mb-4 px-3 py-1 rounded-full"
-            style={{ background: "var(--gold-pale)", color: "var(--gold)" }}
-          >
-            Testimoni
-          </div>
           <h2
             className="text-[32px] md:text-[38px] font-bold"
             style={{
@@ -20,12 +13,12 @@ export default function Partner() {
               letterSpacing: "-0.01em",
             }}
           >
-            Apa kata mitra kami
+            Mitra Kami
           </h2>
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
+        {/* <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <div
               key={i}
@@ -35,7 +28,6 @@ export default function Partner() {
                 border: "1px solid var(--line)",
               }}
             >
-              {/* Quote mark */}
               <div
                 className="text-[48px] leading-none font-bold mb-4 -mt-2"
                 style={{ color: "var(--gold)", fontFamily: "Georgia, serif" }}
@@ -50,13 +42,11 @@ export default function Partner() {
                 {t.quote}
               </p>
 
-              {/* Divider */}
               <div
                 className="w-10 h-0.5 mb-5"
                 style={{ background: "var(--gold)" }}
               />
 
-              {/* Attribution */}
               <div>
                 <div
                   className="text-[14px] font-semibold"
@@ -73,7 +63,8 @@ export default function Partner() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
+        
       </div>
     </section>
   );
