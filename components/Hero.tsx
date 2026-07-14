@@ -1,18 +1,19 @@
 import Link from "next/link";
-import { heroContent, stats } from "@/libs/data";
+import Image from "next/image";
+import { heroContent, strengths, stats } from "@/libs/data";
 
 export default function Hero() {
   return (
     <section
       className="relative overflow-hidden"
       style={{
-        background: "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--navy-light) 100%)",
+        background:
+          "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--navy-light) 100%)",
         minHeight: "88vh",
         display: "flex",
         alignItems: "center",
       }}
     >
-      {/* Background pattern */}
       <div
         className="absolute inset-0 opacity-[0.04]"
         style={{
@@ -22,7 +23,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Gold accent line top */}
       <div
         className="absolute top-0 left-0 right-0 h-1"
         style={{ background: "var(--gold)" }}
@@ -30,7 +30,6 @@ export default function Hero() {
 
       <div className="relative max-w-6xl mx-auto px-6 py-24 w-full">
         <div className="max-w-3xl">
-          {/* Eyebrow */}
           <div
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[12px] font-semibold uppercase tracking-widest mb-8"
             style={{
@@ -46,7 +45,6 @@ export default function Hero() {
             {heroContent.eyebrow}
           </div>
 
-          {/* Headline */}
           <h1
             className="text-[44px] md:text-[58px] leading-[1.1] font-bold mb-3"
             style={{
@@ -68,7 +66,6 @@ export default function Hero() {
             {heroContent.subheadline}
           </h1>
 
-          {/* Description */}
           <p
             className="text-[17px] leading-relaxed mb-10 max-w-2xl"
             style={{ color: "rgba(255,255,255,0.7)" }}
@@ -76,7 +73,6 @@ export default function Hero() {
             {heroContent.description}
           </p>
 
-          {/* Actions */}
           <div className="flex flex-wrap gap-4 mb-16">
             <Link
               href={heroContent.ctaPrimary.href}
@@ -98,40 +94,40 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Stats strip */}
-          <div
-            className="grid grid-cols-2 md:grid-cols-4 gap-0 rounded-sm overflow-hidden"
-            style={{ border: "1px solid rgba(255,255,255,0.1)" }}
-          >
-            {stats.map((stat, i) => (
-              <div
-                key={i}
-                className="px-6 py-5 text-center"
-                style={{
-                  background: "rgba(255,255,255,0.06)",
-                  borderRight:
-                    i < stats.length - 1
-                      ? "1px solid rgba(255,255,255,0.1)"
-                      : "none",
-                }}
-              >
+          <div className="mt-14">
+            <div
+              className="text-[12px] font-semibold uppercase tracking-widest mb-5"
+              style={{ color: "rgba(255,255,255,0.7)" }}
+            >
+              Mengapa memilih kami
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+              {strengths.map((s, i) => (
                 <div
-                  className="text-[28px] font-bold mb-1"
+                  key={i}
+                  className="flex flex-col items-center text-center gap-3 px-3 py-5 rounded-sm"
                   style={{
-                    color: "var(--gold)",
-                    fontFamily: "var(--font-plus-jakarta)",
+                    background: "rgba(255,255,255,0.06)",
+                    border: "1px solid rgba(255,255,255,0.1)",
                   }}
                 >
-                  {stat.value}
+                  <div className="relative w-14 h-14 flex-shrink-0">
+                    <Image
+                      src={s.icon}
+                      alt={s.title}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <div
+                    className="text-[12px] font-semibold leading-relaxed w-full"
+                    style={{ color: "white" }}
+                  >
+                    {s.title}
+                  </div>
                 </div>
-                <div
-                  className="text-[12px] font-medium"
-                  style={{ color: "rgba(255,255,255,0.55)" }}
-                >
-                  {stat.label}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

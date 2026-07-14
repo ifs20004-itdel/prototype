@@ -23,10 +23,25 @@ export const heroContent = {
   headline: "Suplai mesin industri & fabrikasi",
   subheadline: "untuk bisnis yang tidak boleh berhenti.",
   description:
-    "PT Tectona Karya Sampoerna adalah perusahaan yang bergerak dalam bidang perdagangan besar, ekspor, dan impor, dengan fokus utama pada penyediaan mesin kantor, mesin industri pengolahan, suku cadang, hingga layanan reparasi untuk produk logam fabrikasi. Kami berkomitmen menghadirkan layanan berkualitas yang dapat mendukung kelancaran operasional para mitra di berbagai sektor industri.",
+  "PT Tectona Karya Sampoerna adalah perusahaan yang bergerak dalam bidang perdagangan besar, ekspor, dan impor, dengan fokus utama pada penyediaan mesin kantor, mesin industri pengolahan, suku cadang, hingga layanan reparasi untuk produk logam fabrikasi. Kami berkomitmen menghadirkan layanan berkualitas yang dapat mendukung kelancaran operasional para mitra di berbagai sektor industri.",
   ctaPrimary: { label: "Lihat Layanan Kami", href: "/services" },
   ctaSecondary: { label: "Hubungi Kami", href: "#contact" },
 };
+
+export const stats = [
+  { value: "10+", label: "Tahun Pengalaman" },
+  { value: "200+", label: "Produk Tersedia" },
+  { value: "50+", label: "Klien Industri" },
+  { value: "100%", label: "Komitmen Kualitas" },
+];
+
+export const strengths = [
+  {icon: "/icons/layanan.svg", title: "Layanan lengkap dan terpadu"},
+  {icon: "/icons/kualitas.svg", title: "Kualitas produk terjamin"},
+  {icon: "/icons/teknisi.svg", title: "Teknisi profesional dan berpengalaman"},
+  {icon: "/icons/ekspor.svg", title: "Kemampuan mengelola ekspor-impor yang sesuai regulasi"},
+  {icon: "/icons/harga.svg", title: "Harga kompetitif dengan penawaran yang transparan"}
+];
 
 export const aboutSummary = {
   eyebrow: "Tentang Kami",
@@ -89,12 +104,6 @@ export const services = [
   },
 ];
 
-export const stats = [
-  { value: "10+", label: "Tahun Pengalaman" },
-  { value: "200+", label: "Produk Tersedia" },
-  { value: "50+", label: "Klien Industri" },
-  { value: "100%", label: "Komitmen Kualitas" },
-];
 
 export const testimonials = [
   {
