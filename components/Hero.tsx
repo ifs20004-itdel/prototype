@@ -30,21 +30,6 @@ export default function Hero() {
 
       <div className="relative max-w-[1400px] mx-auto px-6 py-24 w-full">
         <div className="max-w-3xl">
-          <div
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[12px] font-semibold uppercase tracking-widest mb-8"
-            style={{
-              background: "rgba(212,160,23,0.15)",
-              border: "1px solid rgba(212,160,23,0.3)",
-              color: "var(--gold-light)",
-            }}
-          >
-            <span
-              className="w-1.5 h-1.5 rounded-full"
-              style={{ background: "var(--gold)" }}
-            />
-            {heroContent.eyebrow}
-          </div>
-
           <h1
             className="text-[44px] md:text-[58px] leading-[1.1] font-bold mb-3"
             style={{

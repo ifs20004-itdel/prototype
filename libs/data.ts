@@ -19,7 +19,6 @@ export const navLinks = [
 ];
 
 export const heroContent = {
-  eyebrow: "Berbasis di Pelalawan, Riau",
   headline: "Suplai mesin industri & fabrikasi",
   subheadline: "untuk bisnis yang tidak boleh berhenti.",
   description:
@@ -47,7 +46,7 @@ export const aboutSummary = {
   eyebrow: "Tentang Kami",
   headline: "Dibangun di atas integritas,\nbertumbuh bersama industri.",
   description:
-    "PT. Tectona Karya Sampoerna hadir untuk memenuhi kebutuhan mesin, suku cadang, dan perlengkapan industri pengolahan di Riau. Dengan jaringan pemasok yang luas dan kapabilitas fabrikasi sendiri, kami memastikan industri Anda beroperasi tanpa hambatan.",
+    "Dengan pengalaman luas yang dimiliki, kami mampu menjadi mitra andalan kebutuhan Anda. Mulai dari pengadaan mesin hingga layanan teknis, semuanya dijalankan dengan mengedepankan standar kualitas terbaik. PT Tectona Karya Sampoerna percaya bahwa kami akan menjadi yang terdepan dalam memberikan solusi terintegrasi bagi kebutuhan industri di dalam maupun luar negeri.",
   cta: { label: "Selengkapnya", href: "/about" },
   image: {
     src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&q=80",
@@ -55,18 +54,33 @@ export const aboutSummary = {
   },
   values: [
     {
-      title: "Kualitas Terverifikasi",
-      desc: "Setiap produk dan komponen yang kami suplai telah melalui seleksi dan verifikasi kualitas.",
+      title: "Layanan Personal & Fleksibel",
+      desc: "Setiap klien memiliki kebutuhan yang berbeda — kami menyesuaikan layanan sesuai skala dan spesifikasi bisnis Anda.",
     },
     {
-      title: "Ketersediaan Stok",
-      desc: "Jaringan pemasok luas memastikan kebutuhan suku cadang dan mesin tersedia tepat waktu.",
+      title: "Mitra Lintas Sektor Industri",
+      desc: "Kami telah melayani berbagai sektor industri, dari manufaktur hingga pengolahan sumber daya alam.",
     },
     {
-      title: "Fabrikasi Presisi",
-      desc: "Kapabilitas fabrikasi in-house untuk kebutuhan komponen custom sesuai spesifikasi.",
+      title: "Patuh Regulasi & Standar",
+      desc: "Seluruh kegiatan operasional dan pengadaan kami dijalankan sesuai regulasi yang berlaku, termasuk ketentuan ekspor-impor.",
+    },
+    {
+      title: "Jaringan Global, Pelayanan Lokal",
+      desc: "Koneksi kami dengan pemasok internasional memastikan ketersediaan produk berkualitas dengan waktu pengiriman yang kompetitif.",
+    },
+    {
+      title: "Respons Cepat & Tepat",
+      desc: "Kami memahami bahwa waktu adalah aset — setiap permintaan ditangani segera tanpa mengorbankan kualitas.",
     },
   ],
+};
+
+export const servicesHeader = {
+  eyebrow: "Layanan Kami",
+  headline: "Apa yang kami tawarkan",
+  description:
+    "Kami hadir dengan berbagai layanan profesional untuk mendukung kebutuhan bisnis Anda di Riau.",
 };
 
 export const services = [
@@ -104,27 +118,6 @@ export const services = [
   },
 ];
 
-
-export const testimonials = [
-  {
-    name: "Budi Santoso",
-    position: "Kepala Teknik, PT. Riau Andalan Pulp",
-    quote:
-      "Kebutuhan suku cadang mesin kami selalu terpenuhi tepat waktu. Tectona paham betul urgensi operasional industri — tidak pernah mengecewakan.",
-  },
-  {
-    name: "Siti Rahma",
-    position: "Manajer Pengadaan, CV. Mitra Industri Riau",
-    quote:
-      "Kami bekerja sama untuk pengadaan mesin produksi. Prosesnya profesional, dokumentasi lengkap, dan harga sangat kompetitif.",
-  },
-  {
-    name: "Hendra Wijaya",
-    position: "Direktur, UD. Karya Teknik Pelalawan",
-    quote:
-      "Fabrikasi komponen custom mereka hasilnya presisi dan sesuai drawing. Leadtime pun sesuai yang dijanjikan. Sudah jadi langganan tetap kami.",
-  },
-];
 
 export const aboutPage = {
   headline: "Tentang PT. Tectona Karya Sampoerna",
