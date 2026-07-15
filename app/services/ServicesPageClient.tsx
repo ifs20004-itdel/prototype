@@ -60,7 +60,6 @@ export default function ServicesPage() {
                   i < services.length - 1 ? "1px solid var(--line)" : "none",
               }}
             >
-              {/* Left — id + title */}
               <div>
                 <div
                   className="text-[11px] font-bold uppercase tracking-widest mb-3"
@@ -68,7 +67,7 @@ export default function ServicesPage() {
                 >
                   {service.id}
                 </div>
-                <div className="text-4xl mb-5">{service.icon}</div>
+                {/* <div className="text-4xl mb-5">{service.icon}</div> */}
                 <h2
                   className="text-[24px] font-bold"
                   style={{

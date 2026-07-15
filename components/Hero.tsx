@@ -25,7 +25,7 @@ export default function Hero() {
 
       <div
         className="absolute top-0 left-0 right-0 h-1"
-        style={{ background: "var(--gold)" }}
+        style={{ background: "var(--orange)" }}
       />
 
       <div className="relative max-w-[1400px] mx-auto px-6 py-24 w-full">
@@ -43,7 +43,7 @@ export default function Hero() {
           <h1
             className="text-[44px] md:text-[58px] leading-[1.1] font-bold mb-8"
             style={{
-              color: "var(--gold)",
+              color: "var(--orange)",
               fontFamily: "var(--font-plus-jakarta)",
               letterSpacing: "-0.02em",
             }}
@@ -62,7 +62,7 @@ export default function Hero() {
             <Link
               href={heroContent.ctaPrimary.href}
               className="inline-block px-7 py-3.5 rounded-sm text-[14.5px] font-semibold transition-colors duration-200"
-              style={{ background: "var(--gold)", color: "var(--navy-dark)" }}
+              style={{ background: "var(--orange)", color: "var(--navy-dark)" }}
             >
               {heroContent.ctaPrimary.label}
             </Link>

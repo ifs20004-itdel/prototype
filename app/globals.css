@@ -1,24 +1,5 @@
 @import "tailwindcss";
 
-/* :root {
-  --navy: #1B2D5B;
-  --navy-dark: #111E3D;
-  --navy-light: #2A4080;
-  --gold: #D4A017;
-  --gold-light: #E8B830;
-  --gold-pale: #FBF3DC;
-  --gray: #6B7280;
-  --gray-light: #F3F4F6;
-  --gray-mid: #E5E7EB;
-  --line: rgba(27, 45, 91, 0.12);
-  --line-strong: rgba(27, 45, 91, 0.22);
-  --text: #1A1A2E;
-  --text-mute: #6B7280;
-  --text-dim: #9CA3AF;
-  --bg: #F8F9FA;
-  --white: #FFFFFF;
-} */
-
 :root {
   --navy: #1B2D5B;
   --navy-dark: #111E3D;
