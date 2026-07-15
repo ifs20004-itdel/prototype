@@ -1,5 +1,13 @@
 import Link from "next/link";
 import { services, servicesHeader } from "@/libs/data";
+import { Settings2, Wrench, Factory, ContainerIcon  } from "lucide-react";
+
+const serviceIcons = [
+  <Settings2 size={28} strokeWidth={1.5} />,   
+  <Wrench size={28} strokeWidth={1.5} />,      
+  <Factory size={28} strokeWidth={1.5} />,
+  <ContainerIcon  size={28} strokeWidth={1.5} />,
+];
 
 export default function ServicesSection() {
   return (
@@ -31,7 +39,7 @@ export default function ServicesSection() {
         </div>
         
         <div className="grid md:grid-cols-2 gap-6 mb-10">
-          {services.map((service) => (
+          {services.map((service, i) => (
             <div
               key={service.id}
               className="rounded-sm p-8 transition-all duration-200 group"
@@ -48,7 +56,6 @@ export default function ServicesSection() {
                 e.currentTarget.style.boxShadow = "none";
               }}
             >
-              {/* ID + Icon */}
               <div className="flex items-center justify-between mb-5">
                 <span
                   className="text-[11px] font-bold uppercase tracking-widest"
@@ -56,7 +63,7 @@ export default function ServicesSection() {
                 >
                   {service.id}
                 </span>
-                <span className="text-2xl">{service.icon}</span>
+                <span style={{ color: "var(--gold)" }}>{serviceIcons[i]}</span>
               </div>
 
               <h3

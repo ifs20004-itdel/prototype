@@ -94,7 +94,7 @@ export default function Footer() {
             className="text-[12.5px]"
             style={{ color: "rgba(255,255,255,0.3)" }}
           >
-            Pelalawan, Riau — Indonesia
+            Pelalawan, Riau - Indonesia
           </p>
         </div>
       </div>

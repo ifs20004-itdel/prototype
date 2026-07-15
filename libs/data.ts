@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "PT. Tectona Karya Sampoerna",
   shortName: "Tectona",
   tagline:
-    "Perdagangan besar mesin industri, suku cadang, perlengkapan, dan fabrikasi — berbasis di Pelalawan, Riau.",
+    "Perdagangan besar mesin industri, suku cadang, perlengkapan, dan fabrikasi yang berbasis di Pelalawan, Riau.",
   email: "pt@tectonakaryasampoerna.com",
   location: "Jl. Melur (The Melur Green House) Blok D No. 16, Pelalawan, Riau",
   whatsapp: "https://wa.me/6281234567890",
@@ -80,41 +80,37 @@ export const servicesHeader = {
   eyebrow: "Layanan Kami",
   headline: "Apa yang kami tawarkan",
   description:
-    "Kami hadir dengan berbagai layanan profesional untuk mendukung kebutuhan bisnis Anda di Riau.",
+    "Kami hadir dengan berbagai layanan profesional untuk mendukung kebutuhan bisnis Anda.",
 };
 
 export const services = [
   {
     id: "01",
-    title: "Perdagangan Mesin Industri",
+    title: "Perdagangan Mesin Dan Perlengkapan",
     short:
       "Suplai mesin kantor dan industri pengolahan dari berbagai merek dan spesifikasi untuk kebutuhan operasional Anda.",
-    full: "Kami menyediakan berbagai jenis mesin kantor dan mesin industri pengolahan — mulai dari mesin produksi, mesin pengolahan bahan baku, hingga peralatan pendukung operasional pabrik. Dengan jaringan distributor dan agen resmi yang luas, kami memastikan ketersediaan unit sesuai spesifikasi teknis yang dibutuhkan, dengan harga kompetitif dan garansi purna jual.",
-    icon: "⚙️",
+    full: "Kami menyediakan berbagai mesin kantor dan mesin industri yang berkualitas untuk membantu meningkatkan efisiensi operasional. Mesin kami tersedia dalam berbagai tipe maupun spesifikasi agar dapat disesuaikan dengan kebutuhan industri manufaktur hingga sektor lainnya.",
   },
   {
     id: "02",
-    title: "Suku Cadang & Perlengkapan",
+    title: "Penyediaan Suku Cadang",
     short:
-      "Penyediaan suku cadang orisinal dan aftermarket untuk berbagai jenis mesin industri — cepat dan tepat.",
-    full: "Downtime akibat kerusakan mesin adalah kerugian besar bagi industri. Kami hadir sebagai solusi cepat penyediaan suku cadang — baik orisinal (OEM) maupun aftermarket berkualitas — untuk berbagai merek dan tipe mesin industri. Katalog suku cadang kami mencakup komponen mekanik, elektrikal, hidrolik, dan pneumatik.",
-    icon: "🔩",
+      "Penyediaan suku cadang dan komponen mesin dengan performa optimal disediakan secara cepat dan tepat.",
+    full: "Kami menyediakan berbagai suku cadang dan komponen mesin dengan performa yang optimal. Kami bekerja sama dengan berbagai mitra untuk memastikan kebutuhan suku cadang terpenuhi secara efisien dan tepat waktu.",
   },
   {
     id: "03",
-    title: "Fabrikasi & Manufaktur",
+    title: "Reparasi Dan Perawatan Logam Fabrikasi",
     short:
       "Layanan fabrikasi komponen dan struktur logam sesuai gambar teknik dan spesifikasi klien.",
     full: "Unit fabrikasi kami mampu mengerjakan pembuatan komponen mesin, struktur baja, housing, bracket, dan berbagai kebutuhan fabrikasi logam custom. Kami mengerjakan berdasarkan gambar teknik (drawing) yang diberikan klien dengan toleransi dimensi yang presisi, menggunakan mesin CNC, las, dan bubut.",
-    icon: "🏭",
   },
   {
     id: "04",
-    title: "Konsultasi & Pengadaan Teknis",
+    title: "Layanan Ekspor-Impor",
     short:
-      "Pendampingan teknis dalam pemilihan mesin, spesifikasi komponen, dan proses pengadaan.",
-    full: "Tidak yakin mesin atau komponen mana yang tepat untuk kebutuhan Anda? Tim teknis kami siap memberikan konsultasi — mulai dari analisis kebutuhan, rekomendasi spesifikasi, hingga proses pengadaan end-to-end. Kami membantu Anda membuat keputusan pengadaan yang tepat secara teknis dan ekonomis.",
-    icon: "📐",
+      "Pengurusan ekspor-impor mesin, perlengkapan, dan suku cadang ditangani penuh oleh tim ahli kami sesuai regulasi.",
+    full: "Kami menyediakan layanan ekspor dan impor untuk mesin, perlengkapan, hingga suku cadangnya. Kami menjamin pengiriman yang aman karena seluruh proses telah terstandarisasi dan akan ditangani oleh tim ahli kami, sehingga Anda tidak perlu khawatir dengan proses administrasi yang kompleks.",
   },
 ];
 
@@ -122,7 +118,7 @@ export const services = [
 export const aboutPage = {
   headline: "Tentang PT. Tectona Karya Sampoerna",
   description:
-    "Perusahaan perdagangan besar mesin industri, suku cadang, perlengkapan, dan fabrikasi — melayani kebutuhan industri di Pelalawan, Riau dan sekitarnya.",
+    "Perusahaan perdagangan besar mesin industri, suku cadang, perlengkapan, dan fabrikasi. Melayani kebutuhan industri yang berbasis di Pelalawan, Riau dan sekitarnya.",
   history:
     "PT. Tectona Karya Sampoerna didirikan untuk menjawab kebutuhan nyata industri di Riau akan suplai mesin, suku cadang, dan perlengkapan yang handal. Berlokasi di Pelalawan — jantung kawasan industri Riau — kami membangun jaringan pemasok dan kapabilitas fabrikasi yang memungkinkan kami melayani berbagai skala industri dengan cepat dan tepat.",
   vision:
