@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="relative max-w-[1400px] mx-auto px-6 py-24 w-full">
         <div className="max-w-3xl">
           <h1
-            className="text-[44px] md:text-[58px] leading-[1.1] font-bold mb-3"
+            className="text-[44px] md:text-[52px] leading-[1.1] font-bold mb-3"
             style={{
               color: "white",
               fontFamily: "var(--font-plus-jakarta)",
@@ -41,7 +41,7 @@ export default function Hero() {
             {heroContent.headline}
           </h1>
           <h1
-            className="text-[44px] md:text-[58px] leading-[1.1] font-bold mb-8"
+            className="text-[44px] md:text-[52px] leading-[1.1] font-bold mb-8"
             style={{
               color: "var(--orange)",
               fontFamily: "var(--font-plus-jakarta)",

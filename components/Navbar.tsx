@@ -106,8 +106,8 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="PT. Tectona Karya Sampoerna"
-            width={220}
-            height={60}
+            width={200}
+            height={40}
             className="object-contain"
             priority
           />
