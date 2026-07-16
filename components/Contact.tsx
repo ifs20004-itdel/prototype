@@ -8,7 +8,6 @@ export default function Contact() {
       style={{ background: "var(--navy)" }}
     >
       <div className="max-w-6xl mx-auto px-6">
-        
         <div className="text-center mb-14">
           <div
             className="inline-block text-[12px] font-bold uppercase tracking-widest mb-4 px-3 py-1 rounded-full"
@@ -34,7 +33,8 @@ export default function Contact() {
             className="text-[15.5px] max-w-lg mx-auto"
             style={{ color: "rgba(255,255,255,0.6)" }}
           >
-            Siap berdiskusi tentang kebutuhan bisnis Anda. Tim kami akan merespons dalam waktu 1x24 jam.
+            Siap berdiskusi tentang kebutuhan bisnis Anda. Tim kami akan
+            merespons dalam waktu 1x24 jam.
           </p>
         </div>
 
@@ -69,7 +69,10 @@ export default function Contact() {
                 >
                   Email
                 </div>
-                <div className="text-[14.5px] font-medium" style={{ color: "white" }}>
+                <div
+                  className="text-[14.5px] font-medium"
+                  style={{ color: "white" }}
+                >
                   {siteConfig.email}
                 </div>
               </div>
@@ -106,7 +109,10 @@ export default function Contact() {
                 >
                   WhatsApp
                 </div>
-                <div className="text-[14.5px] font-medium" style={{ color: "white" }}>
+                <div
+                  className="text-[14.5px] font-medium"
+                  style={{ color: "white" }}
+                >
                   Chat langsung dengan tim kami
                 </div>
               </div>
@@ -143,29 +149,23 @@ export default function Contact() {
           </div>
 
           <div
-            className="rounded-sm overflow-hidden flex items-center justify-center"
+            className="rounded-sm overflow-hidden"
             style={{
               background: "rgba(255,255,255,0.06)",
               border: "1px solid rgba(255,255,255,0.1)",
               minHeight: "300px",
             }}
           >
-            <div className="text-center px-6">
-              <div className="text-4xl mb-4">🗺️</div>
-              <p
-                className="text-[14px] font-medium mb-2"
-                style={{ color: "rgba(255,255,255,0.7)" }}
-              >
-                Google Maps
-              </p>
-              <p
-                className="text-[12.5px]"
-                style={{ color: "rgba(255,255,255,0.4)" }}
-              >
-                Jl. Melur, The Melur Green House<br />
-                Blok D No. 16, Pelalawan, Riau
-              </p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.3579640503788!2d101.86067811979211!3d0.38675254011558285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5c4ed1ce83be9%3A0x6dd2db919aba89fb!2sJl.%20Melur%2C%20Pangkalan%20Kerinci%20Kota%2C%20Kec.%20Pangkalan%20Kerinci%2C%20Kabupaten%20Pelalawan%2C%20Riau%2028654!5e0!3m2!1sid!2sid!4v1784163403623!5m2!1sid!2sid"
+              width="100%"
+              height="380"
+              style={{ border: 0 , display: "block"}}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="PT. Tectona Karya Sampoerna"
+            ></iframe>
           </div>
         </div>
       </div>

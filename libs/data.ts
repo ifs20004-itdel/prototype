@@ -4,8 +4,8 @@ export const siteConfig = {
   tagline:
     "Perdagangan besar mesin industri, suku cadang, perlengkapan, dan fabrikasi yang berbasis di Pelalawan, Riau.",
   email: "pt@tectonakaryasampoerna.com",
-  location: "Jl. Melur (The Melur Green House) Blok D No. 16, Pelalawan, Riau",
-  whatsapp: "https://wa.me/6281234567890",
+  location: "Jl.Melur, Kel.Pangkalan Kerinci Timur, Kab.Pelalawan, Riau",
+  whatsapp: "https://wa.me/628114849998",
   instagram: "#",
   mapsEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7!2d102.2!3d0.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMCzCsDEyJzAwLjAiTiAxMDLCsDEyJzAwLjAiRQ!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid",
@@ -120,7 +120,7 @@ export const aboutPage = {
   description:
     "Perusahaan perdagangan besar mesin industri, suku cadang, perlengkapan, dan fabrikasi. Melayani kebutuhan industri yang berbasis di Pelalawan, Riau dan sekitarnya.",
   history:
-    "PT. Tectona Karya Sampoerna didirikan untuk menjawab kebutuhan nyata industri di Riau akan suplai mesin, suku cadang, dan perlengkapan yang handal. Berlokasi di Pelalawan — jantung kawasan industri Riau — kami membangun jaringan pemasok dan kapabilitas fabrikasi yang memungkinkan kami melayani berbagai skala industri dengan cepat dan tepat.",
+    "PT. Tectona Karya Sampoerna didirikan untuk menjawab kebutuhan nyata industri di Riau akan suplai mesin, suku cadang, dan perlengkapan yang handal. Berlokasi di Pelalawan, jantung kawasan industri Riau, kami membangun jaringan pemasok dan kapabilitas fabrikasi yang memungkinkan kami melayani berbagai skala industri dengan cepat dan tepat.",
   vision:
     "Menjadi mitra pengadaan mesin dan fabrikasi industri terpercaya di Riau yang dikenal atas kualitas produk, kecepatan layanan, dan integritas dalam setiap transaksi.",
   mission: [
