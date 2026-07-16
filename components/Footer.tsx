@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig, navLinks } from "@/libs/data";
 
 export default function Footer() {
@@ -9,6 +10,16 @@ export default function Footer() {
         <div className="grid md:grid-cols-[1.6fr_1fr_1fr] gap-10 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-5">
+              {/* <Link href="/" className="flex items-center">
+                <Image
+                  src="/logo.png"
+                  alt="PT. Tectona Karya Sampoerna"
+                  width={120}
+                  height={20}
+                  className="object-contain"
+                  priority
+                />
+              </Link> */}
               <div
                 className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm"
                 style={{ background: "var(--gold)", color: "var(--navy-dark)" }}
@@ -18,7 +29,10 @@ export default function Footer() {
               <div>
                 <div
                   className="text-[15px] font-bold"
-                  style={{ color: "white", fontFamily: "var(--font-plus-jakarta)" }}
+                  style={{
+                    color: "white",
+                    fontFamily: "var(--font-plus-jakarta)",
+                  }}
                 >
                   PT. Tectona Karya Sampoerna
                 </div>
@@ -45,8 +59,12 @@ export default function Footer() {
                 href={link.href}
                 className="block text-[13.5px] mb-3 transition-colors duration-200"
                 style={{ color: "rgba(255,255,255,0.55)" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--gold)")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.55)")}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.color = "var(--gold)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.color = "rgba(255,255,255,0.55)")
+                }
               >
                 {link.label}
               </Link>
@@ -64,8 +82,12 @@ export default function Footer() {
               href={`mailto:${siteConfig.email}`}
               className="block text-[13.5px] mb-3 transition-colors duration-200"
               style={{ color: "rgba(255,255,255,0.55)" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "var(--gold)")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.55)")}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.color = "var(--gold)")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.color = "rgba(255,255,255,0.55)")
+              }
             >
               {siteConfig.email}
             </a>
