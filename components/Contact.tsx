@@ -1,6 +1,18 @@
 import { siteConfig } from "@/libs/data";
+import { Mail, MessageCircle, MapPin } from "lucide-react";
 
 export default function Contact() {
+  function ContactIcon({ children }: { children: React.ReactNode }) {
+    return (
+      <div
+        className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
+        style={{ background: "var(--gold)" }}
+      >
+        {children}
+      </div>
+    );
+  }
+
   return (
     <section
       id="contact"
@@ -56,12 +68,9 @@ export default function Contact() {
                 e.currentTarget.style.background = "rgba(255,255,255,0.06)";
               }}
             >
-              <div
-                className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
-                style={{ background: "var(--gold)", color: "var(--navy-dark)" }}
-              >
-                ✉
-              </div>
+              <ContactIcon>
+                <Mail size={18} color="white" strokeWidth={2} />
+              </ContactIcon>
               <div>
                 <div
                   className="text-[12px] uppercase tracking-widest font-semibold mb-1"
@@ -77,7 +86,6 @@ export default function Contact() {
                 </div>
               </div>
             </a>
-
             <a
               href={siteConfig.whatsapp}
               target="_blank"
@@ -96,12 +104,10 @@ export default function Contact() {
                 e.currentTarget.style.background = "rgba(255,255,255,0.06)";
               }}
             >
-              <div
-                className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
-                style={{ background: "var(--gold)", color: "var(--navy-dark)" }}
-              >
-                📱
-              </div>
+              <ContactIcon>
+                <MessageCircle size={18} color="white" strokeWidth={2} />
+              </ContactIcon>
+
               <div>
                 <div
                   className="text-[12px] uppercase tracking-widest font-semibold mb-1"
@@ -117,7 +123,6 @@ export default function Contact() {
                 </div>
               </div>
             </a>
-
             <div
               className="flex items-start gap-5 p-6 rounded-sm"
               style={{
@@ -125,12 +130,9 @@ export default function Contact() {
                 border: "1px solid rgba(255,255,255,0.1)",
               }}
             >
-              <div
-                className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
-                style={{ background: "var(--gold)", color: "var(--navy-dark)" }}
-              >
-                📍
-              </div>
+              <ContactIcon>
+                <MapPin size={18} color="white" strokeWidth={2} />
+              </ContactIcon>
               <div>
                 <div
                   className="text-[12px] uppercase tracking-widest font-semibold mb-1"
@@ -147,7 +149,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-
           <div
             className="rounded-sm overflow-hidden"
             style={{
@@ -160,7 +161,7 @@ export default function Contact() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.3579640503788!2d101.86067811979211!3d0.38675254011558285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5c4ed1ce83be9%3A0x6dd2db919aba89fb!2sJl.%20Melur%2C%20Pangkalan%20Kerinci%20Kota%2C%20Kec.%20Pangkalan%20Kerinci%2C%20Kabupaten%20Pelalawan%2C%20Riau%2028654!5e0!3m2!1sid!2sid!4v1784163403623!5m2!1sid!2sid"
               width="100%"
               height="380"
-              style={{ border: 0 , display: "block"}}
+              style={{ border: 0, display: "block" }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"
