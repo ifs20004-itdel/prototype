@@ -75,7 +75,7 @@ export default function ServicesPage() {
             {services.map((service) => (
               <article
                 key={service.id}
-                className="grid grid-cols-[140px_1fr] gap-5 p-5 rounded-sm items-start"
+                className="grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-5 p-5 rounded-sm items-center"
                 style={{
                   background: "var(--gray-light)",
                   border: "1px solid var(--line)",
@@ -115,7 +115,7 @@ export default function ServicesPage() {
                   </h2>
 
                   <p
-                    className="text-[14px] leading-relaxed"
+                    className="text-[13px] leading-relaxed"
                     style={{ color: "var(--text-mute)" }}
                   >
                     {service.full}
