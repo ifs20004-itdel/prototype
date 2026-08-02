@@ -63,7 +63,7 @@ export default function Partner() {
   const rows = chunkArray(brandsLogos, Math.ceil(brandsLogos.length / 3));
 
   return (
-    <section className="py-20" style={{ background: "var(--gray-light)" }}>
+    <section className="py-20" style={{ background: "var(--white)" }}>
       <div className="max-w-7xl mx-auto px-8 text-center mb-12">
         <div
           className="inline-block text-[12px] font-bold uppercase tracking-widest mb-4 px-3 py-1 rounded-full"
