@@ -1,70 +1,84 @@
-// import { testimonials } from "@/libs/data";
+import { brandsLogos } from "@/libs/data";
+import Image from "next/image";
+
+const duplicated = [...brandsLogos, ...brandsLogos];
 
 export default function Partner() {
   return (
-    <section className="py-24" style={{ background: "var(--white)" }}>
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-14">
-          <h2
-            className="text-[32px] md:text-[38px] font-bold"
-            style={{
-              color: "var(--navy)",
-              fontFamily: "var(--font-plus-jakarta)",
-              letterSpacing: "-0.01em",
-            }}
-          >
-            Mitra Kami
-          </h2>
-        </div>
+    // <section className="py-24" style={{ background: "var(--white)" }}>
+    //   <div className="max-w-6xl mx-auto px-6">
+    //     <div className="text-center mb-14">
+    //       <h2
+    //         className="text-[32px] md:text-[38px] font-bold"
+    //         style={{
+    //           color: "var(--navy)",
+    //           fontFamily: "var(--font-plus-jakarta)",
+    //           letterSpacing: "-0.01em",
+    //         }}
+    //       >
+    //         Merek Terpercaya
+    //       </h2>
+    //     </div>
 
-        {/* Cards */}
-        {/* <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map((t, i) => (
+    //   </div>
+    // </section>
+    <section className="py-20" style={{ background: "var(--white)" }}>
+      <div className="max-w-7xl mx-auto px-8 text-center mb-12">
+        <div
+          className="inline-block text-[12px] font-bold uppercase tracking-widest mb-4 px-3 py-1 rounded-full"
+          style={{ background: "var(--orange-pale)", color: "var(--orange)" }}
+        >
+          Produk
+        </div>
+        <h2
+          className="text-[32px] md:text-[38px] font-bold"
+          style={{
+            color: "var(--navy)",
+            fontFamily: "var(--font-plus-jakarta)",
+            letterSpacing: "-0.01em",
+          }}
+        >
+          Merek Terpercaya
+        </h2>
+        <p
+          className="text-[15px] mt-3 max-w-lg mx-auto"
+          style={{ color: "var(--text-mute)" }}
+        >
+          Kami bermitra dengan merek-merek industri terkemuka dunia untuk
+          memastikan kualitas terbaik bagi klien kami.
+        </p>
+      </div>
+
+      <div
+        className="relative overflow-hidden"
+        style={{
+          maskImage:
+            "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)",
+        }}
+      >
+        <div className="flex gap-6 marquee-track">
+          {duplicated.map((brand, i) => (
             <div
               key={i}
-              className="rounded-sm p-7 flex flex-col"
+              className="flex-shrink-0 flex items-center justify-center rounded-sm px-6 py-4"
               style={{
-                background: "var(--gray-light)",
+                background: "var(--white)",
                 border: "1px solid var(--line)",
               }}
             >
-              <div
-                className="text-[48px] leading-none font-bold mb-4 -mt-2"
-                style={{ color: "var(--gold)", fontFamily: "Georgia, serif" }}
-              >
-                "
-              </div>
-
-              <p
-                className="text-[14.5px] leading-relaxed flex-grow mb-6 italic"
-                style={{ color: "var(--text-mute)" }}
-              >
-                {t.quote}
-              </p>
-
-              <div
-                className="w-10 h-0.5 mb-5"
-                style={{ background: "var(--gold)" }}
+              <Image
+                src={brand.src}
+                alt={brand.alt}
+                width={120}
+                height={48}
+                className="object-contain"
+                style={{ maxHeight: "48px" }}
               />
-
-              <div>
-                <div
-                  className="text-[14px] font-semibold"
-                  style={{ color: "var(--navy)" }}
-                >
-                  {t.name}
-                </div>
-                <div
-                  className="text-[12.5px] mt-0.5"
-                  style={{ color: "var(--text-dim)" }}
-                >
-                  {t.position}
-                </div>
-              </div>
             </div>
           ))}
-        </div> */}
-        
+        </div>
       </div>
     </section>
   );

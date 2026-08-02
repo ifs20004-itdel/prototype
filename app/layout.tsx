@@ -31,7 +31,6 @@ export const metadata: Metadata = {
     "Tectona Karya Sampoerna",
     "perusahaan Pelalawan",
     "kontraktor Riau",
-    "trading Riau",
     "jasa bisnis Pelalawan",
   ],
   openGraph: {

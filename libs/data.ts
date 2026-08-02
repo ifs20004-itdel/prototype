@@ -15,7 +15,6 @@ export const navLinks = [
   { label: "Beranda", href: "/" },
   { label: "Tentang Kami", href: "/about" },
   { label: "Layanan", href: "/services" },
-  { label: "Kontak", href: "#contact" },
 ];
 
 export const heroContent = {
@@ -41,6 +40,10 @@ export const strengths = [
   {icon: "/icons/ekspor.svg", title: "Kemampuan mengelola ekspor-impor yang sesuai regulasi"},
   {icon: "/icons/harga.svg", title: "Harga kompetitif dengan penawaran yang transparan"}
 ];
+
+export const brandsLogos = [
+  { src: "/brands/mueller.png", alt: "Mueller" },
+]
 
 export const aboutSummary = {
   eyebrow: "Tentang Kami",
