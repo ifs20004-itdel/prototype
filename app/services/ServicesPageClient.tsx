@@ -75,7 +75,6 @@ export default function ServicesPage() {
             {services.map((service) => (
               <article
                 key={service.id}
-                // className="grid grid-cols-[96px_1fr] sm:grid-cols-[120px_1fr] gap-5 p-5 rounded-sm items-start"
                 className="grid grid-cols-[140px_1fr] gap-5 p-5 rounded-sm items-start"
                 style={{
                   background: "var(--gray-light)",
