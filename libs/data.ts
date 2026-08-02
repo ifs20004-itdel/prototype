@@ -87,22 +87,27 @@ export const aboutSummary = {
   values: [
     {
       title: "Layanan Personal & Fleksibel",
+      img: "/values/personalization.png",
       desc: "Setiap klien memiliki kebutuhan yang berbeda — kami menyesuaikan layanan sesuai skala dan spesifikasi bisnis Anda.",
     },
     {
       title: "Mitra Lintas Sektor Industri",
+      img: "/values/trusted.png",
       desc: "Kami telah melayani berbagai sektor industri, dari manufaktur hingga pengolahan sumber daya alam.",
     },
     {
       title: "Patuh Regulasi & Standar",
+      img: "/values/comply.png",
       desc: "Seluruh kegiatan operasional dan pengadaan kami dijalankan sesuai regulasi yang berlaku, termasuk ketentuan ekspor-impor.",
     },
     {
       title: "Jaringan Global, Pelayanan Lokal",
+      img: "/values/global.png",
       desc: "Koneksi kami dengan pemasok internasional memastikan ketersediaan produk berkualitas dengan waktu pengiriman yang kompetitif.",
     },
     {
       title: "Respons Cepat & Tepat",
+      img: "/values/responsive.png",
       desc: "Kami memahami bahwa waktu adalah aset — setiap permintaan ditangani segera tanpa mengorbankan kualitas.",
     },
   ],

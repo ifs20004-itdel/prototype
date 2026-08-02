@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsappButton";
+import Image from "next/image";
 import { aboutPage, aboutSummary, stats } from "@/libs/data";
 
 export default function AboutPage() {
@@ -153,9 +154,10 @@ export default function AboutPage() {
                 fontFamily: "var(--font-plus-jakarta)",
               }}
             >
-              Yang kami pegang teguh
+              Mengapa Harus Kami
             </h2>
           </div>
+
           <div className="grid md:grid-cols-3 gap-6">
             {aboutSummary.values.map((v, i) => (
               <div
@@ -167,14 +169,23 @@ export default function AboutPage() {
                 }}
               >
                 <div
-                  className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-5"
-                  style={{ background: "var(--gold-pale)" }}
+                  className="w-20 h-20 rounded-md flex items-center justify-center mx-auto mb-5 p-2"
+                  style={{
+                    background: "var(--gold-light)",
+                    border: "1px solid var(--line)",
+                  }}
                 >
-                  <div
-                    className="w-4 h-4 rounded-full"
-                    style={{ background: "var(--gold)" }}
-                  />
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={v.img}
+                      alt={v.title}
+                      fill
+                      className="object-contain"
+                      sizes="80px"
+                    />
+                  </div>
                 </div>
+
                 <h3
                   className="text-[18px] font-bold mb-3"
                   style={{
@@ -184,6 +195,7 @@ export default function AboutPage() {
                 >
                   {v.title}
                 </h3>
+
                 <p
                   className="text-[14px] leading-relaxed"
                   style={{ color: "var(--text-mute)" }}

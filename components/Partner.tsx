@@ -69,7 +69,7 @@ export default function Partner() {
           className="inline-block text-[12px] font-bold uppercase tracking-widest mb-4 px-3 py-1 rounded-full"
           style={{ background: "var(--orange-pale)", color: "var(--orange)" }}
         >
-          Produk
+          Brand Kami
         </div>
         <h2
           className="text-[32px] md:text-[38px] font-bold mb-3"
