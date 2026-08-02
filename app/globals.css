@@ -23,6 +23,7 @@
   --text-dim: #9CA3AF;
   --bg: #F8F9FA;
   --white: #F0F2F5;
+  --pure-white: #FFFFFF
 }
 
 html {
@@ -50,4 +51,18 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
 }

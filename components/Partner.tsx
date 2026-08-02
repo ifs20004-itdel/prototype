@@ -64,7 +64,9 @@ export default function Partner() {
               key={i}
               className="flex-shrink-0 flex items-center justify-center rounded-sm px-6 py-4"
               style={{
-                background: "var(--white)",
+                width: "160px",
+                height: "80px",
+                background: "var(--pure-white)",
                 border: "1px solid var(--line)",
               }}
             >

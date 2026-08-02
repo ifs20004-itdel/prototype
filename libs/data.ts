@@ -43,6 +43,15 @@ export const strengths = [
 
 export const brandsLogos = [
   { src: "/brands/mueller.png", alt: "Mueller" },
+  { src: "/brands/apv.png", alt: "APV" },
+  { src: "/brands/thermowave.png", alt: "ThermoWave" },
+  { src: "/brands/tranter.png", alt: "Tranter" },
+  { src: "/brands/vicarb.png", alt: "Vicarb" },
+  { src: "/brands/kelvion.png", alt: "Kelvion" },
+  { src: "/brands/reheat.png", alt: "ReHeat" },
+
+
+
 ]
 
 export const aboutSummary = {
