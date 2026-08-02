@@ -21,7 +21,7 @@ export const heroContent = {
   headline: "Suplai mesin industri & fabrikasi",
   subheadline: "untuk bisnis yang tidak boleh berhenti.",
   description:
-  "PT Tectona Karya Sampoerna adalah perusahaan yang bergerak dalam bidang perdagangan besar, ekspor, dan impor, dengan fokus utama pada penyediaan mesin kantor, mesin industri pengolahan, suku cadang, hingga layanan reparasi untuk produk logam fabrikasi. Kami berkomitmen menghadirkan layanan berkualitas yang dapat mendukung kelancaran operasional para mitra di berbagai sektor industri.",
+    "PT Tectona Karya Sampoerna adalah perusahaan yang bergerak dalam bidang perdagangan besar, ekspor, dan impor, dengan fokus utama pada penyediaan mesin kantor, mesin industri pengolahan, suku cadang, hingga layanan reparasi untuk produk logam fabrikasi. Kami berkomitmen menghadirkan layanan berkualitas yang dapat mendukung kelancaran operasional para mitra di berbagai sektor industri.",
   ctaPrimary: { label: "Lihat Layanan Kami", href: "/services" },
   ctaSecondary: { label: "Hubungi Kami", href: "#contact" },
 };
@@ -34,11 +34,20 @@ export const stats = [
 ];
 
 export const strengths = [
-  {icon: "/icons/layanan.svg", title: "Layanan lengkap dan terpadu"},
-  {icon: "/icons/kualitas.svg", title: "Kualitas produk terjamin"},
-  {icon: "/icons/teknisi.svg", title: "Teknisi profesional dan berpengalaman"},
-  {icon: "/icons/ekspor.svg", title: "Kemampuan mengelola ekspor-impor yang sesuai regulasi"},
-  {icon: "/icons/harga.svg", title: "Harga kompetitif dengan penawaran yang transparan"}
+  { icon: "/icons/layanan.svg", title: "Layanan lengkap dan terpadu" },
+  { icon: "/icons/kualitas.svg", title: "Kualitas produk terjamin" },
+  {
+    icon: "/icons/teknisi.svg",
+    title: "Teknisi profesional dan berpengalaman",
+  },
+  {
+    icon: "/icons/ekspor.svg",
+    title: "Kemampuan mengelola ekspor-impor yang sesuai regulasi",
+  },
+  {
+    icon: "/icons/harga.svg",
+    title: "Harga kompetitif dengan penawaran yang transparan",
+  },
 ];
 
 export const brandsLogos = [
@@ -62,7 +71,7 @@ export const brandsLogos = [
   { src: "/brands/schmidt.png", alt: "Schmidt" },
   { src: "/brands/bellgosset.png", alt: "Bell & Gosset" },
   { src: "/brands/hisaka.png", alt: "Hisaka Middle East Co.Ltd" },
-]
+];
 
 export const aboutSummary = {
   eyebrow: "Tentang Kami",
@@ -70,7 +79,7 @@ export const aboutSummary = {
   description:
     "Dengan pengalaman luas yang dimiliki, kami mampu menjadi mitra andalan kebutuhan Anda. Mulai dari pengadaan mesin hingga layanan teknis, semuanya dijalankan dengan mengedepankan standar kualitas terbaik. PT Tectona Karya Sampoerna percaya bahwa kami akan menjadi yang terdepan dalam memberikan solusi terintegrasi bagi kebutuhan industri di dalam maupun luar negeri.",
   cta: { label: "Selengkapnya", href: "/about" },
-  
+
   image: {
     src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&q=80",
     alt: "Operasional mesin industri PT. Tectona Karya Sampoerna",
@@ -137,19 +146,32 @@ export const services = [
   },
 ];
 
-
 export const aboutPage = {
   headline: "Tentang PT. Tectona Karya Sampoerna",
   description:
     "Perusahaan perdagangan mesin industri, suku cadang, dan perlengkapan pendukung untuk membantu kelancaran operasional dan kebutuhan proyek pelanggan. Didukung layanan fabrikasi yang fleksibel, setiap solusi dapat disesuaikan dengan spesifikasi dan kebutuhan di lapangan.",
-  history:
-    "PT. Tectona Karya Sampoerna didirikan untuk menjawab kebutuhan nyata industri di Riau akan suplai mesin, suku cadang, dan perlengkapan yang handal. Berlokasi di Pelalawan, jantung kawasan industri Riau, kami membangun jaringan pemasok dan kapabilitas fabrikasi yang memungkinkan kami melayani berbagai skala industri dengan cepat dan tepat.",
+  history: [
+    `PT Tectona Karya Sampoerna adalah perusahaan yang bergerak dalam 
+    bidang perdagangan besar, ekspor, dan impor, dengan fokus utama 
+    pada penyediaan mesin kantor, mesin industri pengolahan, suku cadang, 
+    hingga layanan reparasi untuk produk logam fabrikasi. Kami berkomitmen 
+    menghadirkan layanan berkualitas yang dapat mendukung kelancaran 
+    operasional para mitra di berbagai sektor industri.`,
+
+    `Dengan pengalaman luas yang dimiliki, kami mampu menjadi mitra andalan 
+    kebutuhan Anda. Mulai dari pengadaan mesin hingga layanan teknis, 
+    semuanya dijalankan dengan mengedepankan standar kualitas terbaik. PT 
+    Tectona Karya Sampoerna percaya bahwa kami akan menjadi yang terdepan 
+    dalam memberikan solusi terintegrasi bagi kebutuhan industri di dalam 
+    maupun luar negeri.`,
+  ],
   vision:
-    "Menjadi mitra pengadaan mesin dan fabrikasi industri terpercaya di Riau yang dikenal atas kualitas produk, kecepatan layanan, dan integritas dalam setiap transaksi.",
+    "Menjadi perusahaan terkemuka yang menyediakan produk dan layanan berstandar nasional, serta berperan aktif dalam mendorong kemajuan manufaktur maupun industri di tingkat nasional dan global.",
   mission: [
-    "Menyediakan mesin industri, suku cadang, dan perlengkapan berkualitas dengan harga kompetitif.",
-    "Memastikan ketersediaan produk tepat waktu untuk meminimalkan downtime operasional klien.",
-    "Menghadirkan kapabilitas fabrikasi presisi untuk kebutuhan komponen custom industri.",
-    "Membangun kemitraan jangka panjang berdasarkan kepercayaan, transparansi, dan profesionalisme.",
+    "Menyediakan produk mesin, suku cadang, dan perlengkapan industri dengan kualitas tinggi, serta harga yang kompetitif.",
+    "Menawarkan layanan reparasi dan pemeliharaan produk logam fabrikasi dengan presisi tinggi dan respons efisien.",
+    "Memperkuat jaringan ekspor-impor melalui kemitraan yang strategis.",
+    "Membangun hubungan jangka panjang dengan klien maupun mitra.",
+    "Mengedepankan profesionalisme dan inovasi sebagai landasan pertumbuhan berkelanjutan.",
   ],
 };

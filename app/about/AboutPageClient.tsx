@@ -63,12 +63,17 @@ export default function AboutPage() {
             >
               Perjalanan kami
             </h2>
-            <p
-              className="text-[15px] leading-relaxed"
-              style={{ color: "var(--text-mute)" }}
-            >
-              {aboutPage.history}
-            </p>
+            <div className="space-y-5">
+              {aboutPage.history.map((paragraph, index) => (
+                <p
+                  key={index}
+                  className="text-[15.5px] leading-relaxed"
+                  style={{ color: "var(--text-mute)" }}
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </div>
 
           <div className="flex flex-col gap-8">
