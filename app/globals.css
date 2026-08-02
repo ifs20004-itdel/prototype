@@ -59,7 +59,7 @@ img {
 }
 
 @keyframes marquee-reverse {
-  0%   { transform: translateX(-25%); }
+  0%   { transform: translateX(-15%); }
   100% { transform: translateX(0); }
 }
 
