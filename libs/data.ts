@@ -117,6 +117,7 @@ export const services = [
   {
     id: "01",
     title: "Perdagangan Mesin Dan Perlengkapan",
+    img: "/services/machinery.png",
     short:
       "Suplai mesin kantor dan industri pengolahan dari berbagai merek dan spesifikasi untuk kebutuhan operasional Anda.",
     full: "Kami menyediakan berbagai mesin kantor dan mesin industri yang berkualitas untuk membantu meningkatkan efisiensi operasional. Mesin kami tersedia dalam berbagai tipe maupun spesifikasi agar dapat disesuaikan dengan kebutuhan industri manufaktur hingga sektor lainnya.",
@@ -124,6 +125,7 @@ export const services = [
   {
     id: "02",
     title: "Penyediaan Suku Cadang",
+    img: "/services/spare-parts.png",
     short:
       "Penyediaan suku cadang dan komponen mesin dengan performa optimal disediakan secara cepat dan tepat.",
     full: "Kami menyediakan berbagai suku cadang dan komponen mesin dengan performa yang optimal. Kami bekerja sama dengan berbagai mitra untuk memastikan kebutuhan suku cadang terpenuhi secara efisien dan tepat waktu.",
@@ -131,6 +133,7 @@ export const services = [
   {
     id: "03",
     title: "Reparasi Dan Perawatan Logam Fabrikasi",
+    img: "/services/fabrication.png",
     short:
       "Layanan fabrikasi komponen dan struktur logam sesuai gambar teknik dan spesifikasi klien.",
     full: "Unit fabrikasi kami mampu mengerjakan pembuatan komponen mesin, struktur baja, housing, bracket, dan berbagai kebutuhan fabrikasi logam custom. Kami mengerjakan berdasarkan gambar teknik (drawing) yang diberikan klien dengan toleransi dimensi yang presisi, menggunakan mesin CNC, las, dan bubut.",
@@ -138,6 +141,7 @@ export const services = [
   {
     id: "04",
     title: "Layanan Ekspor-Impor",
+    img: "/services/trade.png",
     short:
       "Pengurusan ekspor-impor mesin, perlengkapan, dan suku cadang ditangani penuh oleh tim ahli kami sesuai regulasi.",
     full: "Kami menyediakan layanan ekspor dan impor untuk mesin, perlengkapan, hingga suku cadangnya. Kami menjamin pengiriman yang aman karena seluruh proses telah terstandarisasi dan akan ditangani oleh tim ahli kami, sehingga Anda tidak perlu khawatir dengan proses administrasi yang kompleks.",

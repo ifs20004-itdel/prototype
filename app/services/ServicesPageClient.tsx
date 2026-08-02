@@ -1,20 +1,21 @@
 "use client";
 import Navbar from "@/components/Navbar";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsappButton";
 import { services, siteConfig } from "@/libs/data";
-import Link from "next/link";
+import Image from "next/image";
+import { ArrowDown } from "lucide-react";
 
 export default function ServicesPage() {
   return (
     <main>
       <Navbar />
-
-      {/* Page hero */}
       <section
         className="py-20"
         style={{
-          background: "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)",
+          background:
+            "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)",
         }}
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -36,77 +37,97 @@ export default function ServicesPage() {
               letterSpacing: "-0.02em",
             }}
           >
-            Solusi lengkap untuk<br />
+            Solusi lengkap untuk
+            <br />
             <span style={{ color: "var(--gold)" }}>kebutuhan bisnis Anda</span>
           </h1>
           <p
             className="text-[17px] max-w-2xl"
             style={{ color: "rgba(255,255,255,0.65)" }}
           >
-            Kami hadir dengan berbagai layanan profesional yang dirancang untuk mendukung pertumbuhan dan operasional bisnis di Riau.
+            Kami hadir dengan berbagai layanan profesional yang dirancang untuk
+            mendukung pertumbuhan dan operasional bisnis di Riau.
           </p>
         </div>
       </section>
-
-      {/* Services detail */}
-      <section className="py-24" style={{ background: "var(--white)" }}>
-        <div className="max-w-6xl mx-auto px-6 flex flex-col gap-0">
-          {services.map((service, i) => (
-            <div
-              key={service.id}
-              className="grid md:grid-cols-[1fr_2fr] gap-10 py-14"
-              style={{
-                borderBottom:
-                  i < services.length - 1 ? "1px solid var(--line)" : "none",
-              }}
-            >
-              <div>
+      <section className="pt-10" style={{ background: "var(--white)" }}>
+        <div className="text-center">
+          <a
+            href="/docs/PRODUCT CATALOGUE_PT. TECTONA KARYA SAMPOERNA v1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-sm text-[14px] font-semibold transition-transform duration-200 hover:-translate-y-0.5"
+            style={{
+              background: "var(--gold)",
+              color: "var(--navy-dark)",
+            }}
+          >
+            Unduh Katalog
+            <span aria-hidden="true">
+              <ArrowDown />
+            </span>
+          </a>
+        </div>
+      </section>
+      <section className="py-10" style={{ background: "var(--white)" }}>
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-6">
+            {services.map((service) => (
+              <article
+                key={service.id}
+                // className="grid grid-cols-[96px_1fr] sm:grid-cols-[120px_1fr] gap-5 p-5 rounded-sm items-start"
+                className="grid grid-cols-[140px_1fr] gap-5 p-5 rounded-sm items-start"
+                style={{
+                  background: "var(--gray-light)",
+                  border: "1px solid var(--line)",
+                }}
+              >
                 <div
-                  className="text-[11px] font-bold uppercase tracking-widest mb-3"
-                  style={{ color: "var(--text-dim)" }}
-                >
-                  {service.id}
-                </div>
-                {/* <div className="text-4xl mb-5">{service.icon}</div> */}
-                <h2
-                  className="text-[24px] font-bold"
+                  className="relative w-[140px] h-[110px] overflow-hidden rounded-sm"
                   style={{
-                    color: "var(--navy)",
-                    fontFamily: "var(--font-plus-jakarta)",
+                    background: "var(--white)",
+                    border: "1px solid var(--line)",
                   }}
                 >
-                  {service.title}
-                </h2>
-              </div>
-
-              {/* Right — full description */}
-              <div className="flex flex-col justify-center">
-                <p
-                  className="text-[15.5px] leading-relaxed mb-8"
-                  style={{ color: "var(--text-mute)" }}
-                >
-                  {service.full}
-                </p>
-                <Link
-                  href="#contact"
-                  className="inline-flex items-center gap-2 text-[13.5px] font-semibold transition-colors duration-200"
-                  style={{ color: "var(--navy)" }}
-                >
-                  Tanyakan layanan ini
-                  <span
-                    className="w-6 h-6 rounded-full flex items-center justify-center text-[12px]"
-                    style={{ background: "var(--gold-pale)", color: "var(--gold)" }}
+                  <Image
+                    src={service.img}
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                    sizes="140px"
+                  />
+                </div>
+                <div>
+                  <div
+                    className="text-[11px] font-bold uppercase tracking-widest mb-2"
+                    style={{ color: "var(--gold)" }}
                   >
-                    →
-                  </span>
-                </Link>
-              </div>
-            </div>
-          ))}
+                    {service.id}
+                  </div>
+
+                  <h2
+                    className="text-[19px] md:text-[20px] font-bold leading-snug mb-3"
+                    style={{
+                      color: "var(--navy)",
+                      fontFamily: "var(--font-plus-jakarta)",
+                    }}
+                  >
+                    {service.title}
+                  </h2>
+
+                  <p
+                    className="text-[14px] leading-relaxed"
+                    style={{ color: "var(--text-mute)" }}
+                  >
+                    {service.full}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA strip */}
       <section
         className="py-20 text-center"
         style={{ background: "var(--gray-light)" }}
@@ -125,7 +146,8 @@ export default function ServicesPage() {
             className="text-[15.5px] mb-8 max-w-lg mx-auto"
             style={{ color: "var(--text-mute)" }}
           >
-            Hubungi kami langsung — tim kami siap mendiskusikan kebutuhan spesifik bisnis Anda.
+            Hubungi kami langsung — tim kami siap mendiskusikan kebutuhan
+            spesifik bisnis Anda.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
@@ -147,7 +169,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
+      <Contact />
       <Footer />
       <WhatsAppButton />
     </main>

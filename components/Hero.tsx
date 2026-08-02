@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { heroContent, strengths, stats } from "@/libs/data";
+import { heroContent, strengths} from "@/libs/data";
 
 export default function Hero() {
   return (
