@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ProductCategories from "@/components/ProductCategories";
 import WhatsAppButton from "@/components/WhatsappButton";
 import { services, siteConfig } from "@/libs/data";
 import Image from "next/image";
@@ -126,48 +127,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
-      <section
-        className="py-20 text-center"
-        style={{ background: "var(--gray-light)" }}
-      >
-        <div className="max-w-6xl mx-auto px-6">
-          <h2
-            className="text-[30px] font-bold mb-4"
-            style={{
-              color: "var(--navy)",
-              fontFamily: "var(--font-plus-jakarta)",
-            }}
-          >
-            Belum menemukan yang Anda cari?
-          </h2>
-          <p
-            className="text-[15.5px] mb-8 max-w-lg mx-auto"
-            style={{ color: "var(--text-mute)" }}
-          >
-            Hubungi kami langsung — tim kami siap mendiskusikan kebutuhan
-            spesifik bisnis Anda.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <a
-              href={`mailto:${siteConfig.email}`}
-              className="inline-block px-7 py-3.5 rounded-sm text-[14px] font-semibold"
-              style={{ background: "var(--navy)", color: "white" }}
-            >
-              Kirim Email
-            </a>
-            <a
-              href={siteConfig.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-7 py-3.5 rounded-sm text-[14px] font-semibold"
-              style={{ background: "var(--gold)", color: "var(--navy-dark)" }}
-            >
-              Chat WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
+      <ProductCategories />
       <Contact />
       <Footer />
       <WhatsAppButton />

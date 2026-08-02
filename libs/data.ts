@@ -148,6 +148,37 @@ export const services = [
   },
 ];
 
+export const productCategories = [
+  {
+    title: "Workshop",
+    image: {
+      src: "/products/workshop.png",
+      alt: "Workshop dan fasilitas fabrikasi",
+    },
+  },
+  {
+    title: "Mesin",
+    image: {
+      src: "/products/mesin.png",
+      alt: "Mesin industri",
+    },
+  },
+  {
+    title: "PHE Gasket",
+    image: {
+      src: "/products/phe-gasket.png",
+      alt: "Plate heat exchanger gasket",
+    },
+  },
+  {
+    title: "Brazed PHE",
+    image: {
+      src: "/products/brazed-phe.png",
+      alt: "Brazed plate heat exchanger",
+    },
+  },
+];
+
 export const aboutPage = {
   headline: "Tentang PT. Tectona Karya Sampoerna",
   description:
