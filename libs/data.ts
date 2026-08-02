@@ -26,13 +26,6 @@ export const heroContent = {
   ctaSecondary: { label: "Hubungi Kami", href: "#contact" },
 };
 
-export const stats = [
-  { value: "10+", label: "Tahun Pengalaman" },
-  { value: "200+", label: "Produk Tersedia" },
-  { value: "50+", label: "Klien Industri" },
-  { value: "100%", label: "Komitmen Kualitas" },
-];
-
 export const strengths = [
   { icon: "/icons/layanan.svg", title: "Layanan lengkap dan terpadu" },
   { icon: "/icons/kualitas.svg", title: "Kualitas produk terjamin" },

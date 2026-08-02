@@ -1,9 +1,10 @@
 "use client";
 import Navbar from "@/components/Navbar";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsappButton";
+import { aboutPage, aboutSummary} from "@/libs/data";
 import Image from "next/image";
-import { aboutPage, aboutSummary, stats } from "@/libs/data";
 
 export default function AboutPage() {
   return (
@@ -158,11 +159,16 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-6 gap-6">
             {aboutSummary.values.map((v, i) => (
               <div
                 key={i}
-                className="p-8 rounded-sm text-center"
+                className={`p-8 rounded-sm text-center md:col-span-2 ${
+                  aboutSummary.values.length % 3 === 2 &&
+                  i === aboutSummary.values.length - 2
+                    ? "md:col-start-2"
+                    : ""
+                }`}
                 style={{
                   background: "var(--white)",
                   border: "1px solid var(--line)",
@@ -207,7 +213,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
+      <Contact />
       <Footer />
       <WhatsAppButton />
     </main>
