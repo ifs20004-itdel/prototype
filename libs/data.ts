@@ -70,6 +70,7 @@ export const aboutSummary = {
   description:
     "Dengan pengalaman luas yang dimiliki, kami mampu menjadi mitra andalan kebutuhan Anda. Mulai dari pengadaan mesin hingga layanan teknis, semuanya dijalankan dengan mengedepankan standar kualitas terbaik. PT Tectona Karya Sampoerna percaya bahwa kami akan menjadi yang terdepan dalam memberikan solusi terintegrasi bagi kebutuhan industri di dalam maupun luar negeri.",
   cta: { label: "Selengkapnya", href: "/about" },
+  
   image: {
     src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&q=80",
     alt: "Operasional mesin industri PT. Tectona Karya Sampoerna",
@@ -140,7 +141,7 @@ export const services = [
 export const aboutPage = {
   headline: "Tentang PT. Tectona Karya Sampoerna",
   description:
-    "Perusahaan perdagangan besar mesin industri, suku cadang, perlengkapan, dan fabrikasi. Melayani kebutuhan industri yang berbasis di Pelalawan, Riau dan sekitarnya.",
+    "Perusahaan perdagangan mesin industri, suku cadang, dan perlengkapan pendukung untuk membantu kelancaran operasional dan kebutuhan proyek pelanggan. Didukung layanan fabrikasi yang fleksibel, setiap solusi dapat disesuaikan dengan spesifikasi dan kebutuhan di lapangan.",
   history:
     "PT. Tectona Karya Sampoerna didirikan untuk menjawab kebutuhan nyata industri di Riau akan suplai mesin, suku cadang, dan perlengkapan yang handal. Berlokasi di Pelalawan, jantung kawasan industri Riau, kami membangun jaringan pemasok dan kapabilitas fabrikasi yang memungkinkan kami melayani berbagai skala industri dengan cepat dan tepat.",
   vision:

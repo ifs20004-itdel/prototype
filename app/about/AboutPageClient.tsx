@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsappButton";
@@ -11,7 +11,8 @@ export default function AboutPage() {
       <section
         className="py-20"
         style={{
-          background: "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)",
+          background:
+            "linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%)",
         }}
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -41,37 +42,6 @@ export default function AboutPage() {
           >
             {aboutPage.description}
           </p>
-        </div>
-      </section>
-
-      <section style={{ background: "var(--gold)" }}>
-        <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-0">
-          {stats.map((stat, i) => (
-            <div
-              key={i}
-              className="text-center py-4"
-              style={{
-                borderRight:
-                  i < stats.length - 1 ? "1px solid rgba(27,45,91,0.2)" : "none",
-              }}
-            >
-              <div
-                className="text-[30px] font-bold mb-1"
-                style={{
-                  color: "var(--navy-dark)",
-                  fontFamily: "var(--font-plus-jakarta)",
-                }}
-              >
-                {stat.value}
-              </div>
-              <div
-                className="text-[12.5px] font-semibold"
-                style={{ color: "rgba(27,45,91,0.65)" }}
-              >
-                {stat.label}
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
