@@ -49,9 +49,19 @@ export const brandsLogos = [
   { src: "/brands/vicarb.png", alt: "Vicarb" },
   { src: "/brands/kelvion.png", alt: "Kelvion" },
   { src: "/brands/reheat.png", alt: "ReHeat" },
-
-
-
+  { src: "/brands/sondex.png", alt: "Sondex" },
+  { src: "/brands/spx.png", alt: "SPX" },
+  { src: "/brands/swep.png", alt: "SWEP" },
+  { src: "/brands/ittstandardexchange.png", alt: "ITT" },
+  { src: "/brands/gea.png", alt: "GEA" },
+  { src: "/brands/funke.png", alt: "Funke" },
+  { src: "/brands/donghwaentech.png", alt: "Donghwa EnTech" },
+  { src: "/brands/danfoss.png", alt: "Danfoss" },
+  { src: "/brands/accessen.png", alt: "Accessen" },
+  { src: "/brands/alfalaval.png", alt: "Alfa Laval" },
+  { src: "/brands/schmidt.png", alt: "Schmidt" },
+  { src: "/brands/bellgosset.png", alt: "Bell & Gosset" },
+  { src: "/brands/hisaka.png", alt: "Hisaka Middle East Co.Ltd" },
 ]
 
 export const aboutSummary = {
