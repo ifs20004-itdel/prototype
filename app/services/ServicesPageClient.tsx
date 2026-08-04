@@ -3,8 +3,9 @@ import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ProductCategories from "@/components/ProductCategories";
+import BrandsGrid from "@/components/BrandsGrid";
 import WhatsAppButton from "@/components/WhatsappButton";
-import { services, siteConfig } from "@/libs/data";
+import { services} from "@/libs/data";
 import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 
@@ -128,6 +129,7 @@ export default function ServicesPage() {
         </div>
       </section>
       <ProductCategories />
+      <BrandsGrid />
       <Contact />
       <Footer />
       <WhatsAppButton />
