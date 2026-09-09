@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     "kontraktor Riau",
     "jasa bisnis Pelalawan",
   ],
+    verification: {
+    google: "bJEVp8m1X8XVjR81BhDqOVjUM48VG537MROfEmuedC8",
+  },
   openGraph: {
     title: "PT. Tectona Karya Sampoerna",
     description: "Mitra bisnis terpercaya untuk industri di Riau.",
